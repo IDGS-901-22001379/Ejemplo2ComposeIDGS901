@@ -33,7 +33,13 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            SumaDosNumeros()
+
+            Ejemplo2CompoceIDGS901Theme {
+                Surface(color = MaterialTheme.colorScheme.background) {
+                    CalculadoraBasica()
+                }
+            }
+           // SumaDosNumeros()
             //val navController = rememberNavController()
             //NavHost(navController = navController, startDestination = "Inicio") {
             //    composable("Inicio") { pantallaInicio(navController) }
